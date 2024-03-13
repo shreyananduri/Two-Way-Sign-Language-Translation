@@ -9,10 +9,10 @@ while True:
              'a': len(os.listdir(directory+"/A")),
              'b': len(os.listdir(directory+"/B")),
              'c': len(os.listdir(directory+"/C")),
-             'd': len(os.listdir(directory+"/D")),
-             'e': len(os.listdir(directory+"/E")),
-             'f': len(os.listdir(directory+"/F")),
-             'g': len(os.listdir(directory+"/G")),
+             'd': len(os.listdir(directory+"/Pray")),
+             'e': len(os.listdir(directory+"/Hello")),
+             'f': len(os.listdir(directory+"/Thank you")),
+             'g': len(os.listdir(directory+"/Sorry")),
              'h': len(os.listdir(directory+"/H")),
              'i': len(os.listdir(directory+"/I")),
              'j': len(os.listdir(directory+"/J")),
@@ -74,11 +74,11 @@ while True:
     if interrupt & 0xFF == ord('d'):
         cv2.imwrite(directory+'Pray/'+str(count['d'])+'.png',frame)
     if interrupt & 0xFF == ord('e'):
-        cv2.imwrite(directory+'E/'+str(count['e'])+'.png',frame)
+        cv2.imwrite(directory+'Hello/'+str(count['e'])+'.png',frame)
     if interrupt & 0xFF == ord('f'):
-        cv2.imwrite(directory+'F/'+str(count['f'])+'.png',frame)
+        cv2.imwrite(directory+'Thank you/'+str(count['f'])+'.png',frame)
     if interrupt & 0xFF == ord('g'):
-        cv2.imwrite(directory+'G/'+str(count['g'])+'.png',frame)
+        cv2.imwrite(directory+'Sorry/'+str(count['g'])+'.png',frame)
     if interrupt & 0xFF == ord('h'):
         cv2.imwrite(directory+'H/'+str(count['h'])+'.png',frame)
     if interrupt & 0xFF == ord('i'):
