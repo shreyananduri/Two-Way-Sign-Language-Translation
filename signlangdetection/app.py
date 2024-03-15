@@ -129,4 +129,3 @@ if np.unique(predictions[-10:])[0] == np.argmax(res):
 
     # Convert recognized text to speech
     text_to_speech(recognized_text)
-
