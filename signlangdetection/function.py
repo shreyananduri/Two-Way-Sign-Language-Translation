@@ -35,7 +35,7 @@ def extract_keypoints(results):
 # Path for exported data, numpy arrays
 DATA_PATH = os.path.join('MP_Data') 
 
-actions = np.array(['Hello', 'Pray', 'Sorry', 'Thank you'])
+actions = np.array(['Hello', 'Thank you', 'Yes', 'No', 'I Love You', 'Big', 'Cheers', 'Cinema', 'Coffee', 'Dislike', 'Excuse me', 'Good luck'])
 
 no_sequences = 30
 

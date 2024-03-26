@@ -39,8 +39,18 @@ from pytube import YouTube
 
 # Dictionary mapping words to YouTube video URLs
 word_to_url = {
-    # "Hello": 
-    # Add more word-video URL mappings as needed
+    "THANK YOU": "https://www.youtube.com/watch?v=W_qFjH-GKzA",
+    "SORRY": "https://www.youtube.com/watch?v=v7LOMsrEiVI",
+    "SNAKE": "https://www.youtube.com/watch?v=AdV7Zn6p0yg",
+    "FLY": "https://www.youtube.com/watch?v=kvm9DLxYlGo",
+    "PLANE": "https://www.youtube.com/watch?v=_-U30DSj-t0",
+    "MAN": "https://www.youtube.com/watch?v=rYTt2LuzVhw",
+    "WOMAN": "https://www.youtube.com/watch?v=GoDqsUZU5yk",
+    "RAIN": "https://www.youtube.com/watch?v=Xg89XzbXfxc",
+    "HELP": "https://www.youtube.com/watch?v=d9fEfBJmy0Y",
+    "AGE": "https://www.youtube.com/watch?v=98wq5RZYq90",
+    "WATER": "https://www.youtube.com/watch?v=5FSC6Og1RBQ",
+    
 }
 
 def play_youtube_video(video_url, word):
