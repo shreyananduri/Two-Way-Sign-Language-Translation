@@ -18,17 +18,17 @@ while True:
              'j': len(os.listdir(directory+"/Dislike")),
              'k': len(os.listdir(directory+"/Excuse me")),
              'l': len(os.listdir(directory+"/Good luck")),
-             'm': len(os.listdir(directory+"/M")),
-             'n': len(os.listdir(directory+"/N")),
-             'o': len(os.listdir(directory+"/O")),
-             'p': len(os.listdir(directory+"/P")),
-             'q': len(os.listdir(directory+"/Q")),
-             'r': len(os.listdir(directory+"/R")),
-             's': len(os.listdir(directory+"/S")),
-             't': len(os.listdir(directory+"/T")),
-             'u': len(os.listdir(directory+"/U")),
-             'v': len(os.listdir(directory+"/V")),
-             'w': len(os.listdir(directory+"/W")),
+             'm': len(os.listdir(directory+"/Namaste")),
+             'n': len(os.listdir(directory+"/Neutral")),
+             'o': len(os.listdir(directory+"/Nice")),
+             'p': len(os.listdir(directory+"/Okay")),
+             'q': len(os.listdir(directory+"/Peace")),
+             'r': len(os.listdir(directory+"/Please")),
+             's': len(os.listdir(directory+"/Sorry")),
+             't': len(os.listdir(directory+"/Telephone")),
+             'u': len(os.listdir(directory+"/Welcome")),
+             'v': len(os.listdir(directory+"/Whatever")),
+             'w': len(os.listdir(directory+"/Write")),
              'x': len(os.listdir(directory+"/X")),
              'y': len(os.listdir(directory+"/Y")),
              'z': len(os.listdir(directory+"/Z"))
@@ -90,27 +90,27 @@ while True:
     if interrupt & 0xFF == ord('l'):
         cv2.imwrite(directory+'Good luck/'+str(count['l'])+'.png',frame)
     if interrupt & 0xFF == ord('m'):
-        cv2.imwrite(directory+'M/'+str(count['m'])+'.png',frame)
+        cv2.imwrite(directory+'Namaste/'+str(count['m'])+'.png',frame)
     if interrupt & 0xFF == ord('n'):
-        cv2.imwrite(directory+'N/'+str(count['n'])+'.png',frame)
+        cv2.imwrite(directory+'Neutral/'+str(count['n'])+'.png',frame)
     if interrupt & 0xFF == ord('o'):
-        cv2.imwrite(directory+'O/'+str(count['o'])+'.png',frame)
+        cv2.imwrite(directory+'Nice/'+str(count['o'])+'.png',frame)
     if interrupt & 0xFF == ord('p'):
-        cv2.imwrite(directory+'P/'+str(count['p'])+'.png',frame)
+        cv2.imwrite(directory+'Okay/'+str(count['p'])+'.png',frame)
     if interrupt & 0xFF == ord('q'):
-        cv2.imwrite(directory+'Q/'+str(count['q'])+'.png',frame)
+        cv2.imwrite(directory+'Peace/'+str(count['q'])+'.png',frame)
     if interrupt & 0xFF == ord('r'):
-        cv2.imwrite(directory+'R/'+str(count['r'])+'.png',frame)
+        cv2.imwrite(directory+'Please/'+str(count['r'])+'.png',frame)
     if interrupt & 0xFF == ord('s'):
-        cv2.imwrite(directory+'S/'+str(count['s'])+'.png',frame)
+        cv2.imwrite(directory+'Sorry/'+str(count['s'])+'.png',frame)
     if interrupt & 0xFF == ord('t'):
-        cv2.imwrite(directory+'T/'+str(count['t'])+'.png',frame)
+        cv2.imwrite(directory+'Telephone/'+str(count['t'])+'.png',frame)
     if interrupt & 0xFF == ord('u'):
-        cv2.imwrite(directory+'U/'+str(count['u'])+'.png',frame)
+        cv2.imwrite(directory+'Welcome/'+str(count['u'])+'.png',frame)
     if interrupt & 0xFF == ord('v'):
-        cv2.imwrite(directory+'V/'+str(count['v'])+'.png',frame)
+        cv2.imwrite(directory+'Whatever/'+str(count['v'])+'.png',frame)
     if interrupt & 0xFF == ord('w'):
-        cv2.imwrite(directory+'W/'+str(count['w'])+'.png',frame)
+        cv2.imwrite(directory+'Write/'+str(count['w'])+'.png',frame)
     if interrupt & 0xFF == ord('x'):
         cv2.imwrite(directory+'X/'+str(count['x'])+'.png',frame)
     if interrupt & 0xFF == ord('y'):

@@ -50,7 +50,14 @@ word_to_url = {
     "HELP": "https://www.youtube.com/watch?v=d9fEfBJmy0Y",
     "AGE": "https://www.youtube.com/watch?v=98wq5RZYq90",
     "WATER": "https://www.youtube.com/watch?v=5FSC6Og1RBQ",
-    
+    "BIG": "https://youtu.be/a2YWHdD5gKk",
+    "CINEMA": "https://youtu.be/VBx8a9gFcQI",
+    "COFFEE": "https://youtu.be/JmsjCb19HB4",
+    "NUT": "https://youtu.be/QhhIAUupAeo",
+    "WRITE": "https://youtu.be/Qt7PxYKRi7c",
+    "THIGH": "https://youtu.be/AwFPrmwb9B8",
+    "BUTTERFLY": "https://youtu.be/iEN8nrcP1y8",
+    "CRICKET": "https://youtu.be/G-zchviTHUI"
 }
 
 def play_youtube_video(video_url, word):
