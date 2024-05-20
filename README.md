@@ -47,9 +47,18 @@ To use the ISL translator:
 
 ## Results
 
-![Data Collection](Result images/1.jpg)
-![Frame Collection](Result images/3.jpg)
-![Sign to Text translation](Result images/2.jpg)
-![Text to Sign Conversion](Result images/4.jpg)
-![Text to Sign Conversion](Result images/5.jpg)
-
+<strong>Data Collection</strong>
+<br>
+<img src="Result%20images/1.jpg" alt="Data Collection" width="300"/>
+<br><strong>Frame Collection</strong>
+<br>
+<img src="Result%20images/3.jpg" alt="Frame Collection" width="200"/>
+<br><strong>Sign to Text Conversion</strong>
+<br>
+<img src="Result%20images/2.jpg" alt="Sign to Text Conversion" width="200"/>
+<br><strong>Text to Sign Conversion</strong>
+<br>
+<img src="Result%20images/4.png" alt="Text to Sign Conversion" width="300"/>
+<br><strong>Text to Sign Conversion</strong>
+<br>
+<img src="Result%20images/5.png" alt="Text to Sign Conversion" width="300"/>
