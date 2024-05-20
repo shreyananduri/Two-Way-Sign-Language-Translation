@@ -1,39 +1,5 @@
-# import cv2
-# import imageio.v2 as imageio
-# import matplotlib.pyplot as plt
-# import tkinter as tk
-# from tkinter import simpledialog
-
-# def display_image(image_path, title="Original"):
-#     img = imageio.imread(image_path)
-#     plt.imshow(img, cmap='gray')
-#     plt.title(title)
-#     plt.axis('off')
-#     plt.show()
-
-# def main():
-#     path = 'Reverse Images//'  # Directory containing the images
-
-#     # Create a Tkinter root window
-#     root = tk.Tk()
-#     root.withdraw()  # Hide the root window
-
-#     # Prompt the user for input using a dialog box
-#     user_input = simpledialog.askstring("Input", "Enter a word (without spaces):").upper()
-
-#     if user_input is not None:  # Check if the user clicked "Cancel" or closed the dialog
-#         try:
-#             # Load and display the image corresponding to the user input
-#             image_path = path + user_input + '.png'
-#             display_image(image_path, user_input)
-#         except FileNotFoundError:
-#             print("Image not found for input:", user_input)
-
-# if __name__ == "__main__":
-#     main()
-
 import tkinter as tk
-from tkinter import simpledialog
+from tkinter import simpledialog, messagebox
 import cv2
 from pytube import YouTube
 
@@ -80,20 +46,27 @@ def play_youtube_video(video_url, word):
     video_capture.release()
     cv2.destroyAllWindows()
 
-def main():
-    # Create a Tkinter root window
-    root = tk.Tk()
-    root.withdraw()  # Hide the root window
-
+def display_video():
     # Prompt the user for input using a dialog box
-    user_input = simpledialog.askstring("Input", "Enter a word (without spaces):").upper()
+    user_input = simpledialog.askstring("Input", "Enter a word:").upper()
 
     if user_input in word_to_url:  # Check if the word is in the dictionary
         # Play the corresponding YouTube video with the word displayed on top
         play_youtube_video(word_to_url[user_input], user_input)
     else:
         # Display an error message if the word is not found in the dictionary
-        print("Error: Video not found for input:", user_input)
+        messagebox.showerror("Error", "Video not found for input: {}".format(user_input))
+
+    # Call the function recursively to keep the text entry window open
+    display_video()
+
+def main():
+    # Create a Tkinter root window
+    root = tk.Tk()
+    root.withdraw()  # Hide the root window
+
+    # Display the video and prompt for input
+    display_video()
 
 if __name__ == "__main__":
     main()

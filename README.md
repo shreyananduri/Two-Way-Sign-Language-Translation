@@ -47,4 +47,9 @@ To use the ISL translator:
 
 ## Results
 
+![Data Collection](Result images/1.jpg)
+![Frame Collection](Result images/3.jpg)
+![Sign to Text translation](Result images/2.jpg)
+![Text to Sign Conversion](Result images/4.jpg)
+![Text to Sign Conversion](Result images/5.jpg)
 

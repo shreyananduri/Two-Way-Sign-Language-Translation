@@ -7,6 +7,7 @@ from keras.callbacks import TensorBoard
 label_map = {label:num for num, label in enumerate(actions)}
 # print(label_map)
 sequences, labels = [], []
+
 for action in actions:
     for sequence in range(no_sequences):
         window = []
@@ -32,7 +33,7 @@ model.add(Dense(actions.shape[0], activation='softmax'))
 res = [.7, 0.2, 0.1]
 
 model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
-model.fit(X_train, y_train, epochs=200, callbacks=[tb_callback])
+model.fit(X_train, y_train, epochs=100, callbacks=[tb_callback])
 model.summary()
 
 model_json = model.to_json()
